@@ -8,9 +8,6 @@ body {
   font-weight: 500;
   font-style: normal;
   background-color: #fffaf5;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   display: flex;
   height: 100%;
@@ -32,12 +29,16 @@ h2 {
     margin: 0.5rem;
 }
 
+li {
+    margin-bottom: 5px;
+}
+
 .nav {
-    position: fixed;
+    position: sticky;
     top: 0;
-    padding: 1rem 0rem;
+    padding: 1.5rem 0rem;
     width: 100%;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px);
     background-color: #0000000a;
 }
 
@@ -51,4 +52,26 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.documentation {
+    margin: 1rem 6rem;
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        margin: 8px;
+    }
+    h4 {
+        margin: 8px;
+    }
+    p {
+        margin: 8px;
+    }
+}
+
+.title {
+    text-align: center;
 }

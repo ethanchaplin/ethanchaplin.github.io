@@ -1,14 +1,124 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InstruMental</title>
-    <script type="module" crossorigin src="/assets/index-Bqf00bDt.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-9m5H8Ox2.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InstruMental Documentation</title>
+        <link rel="stylesheet" href="../styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="links">
+                <a href="../instrumental">Project 1</a>
+                <a>Project 2</a>
+                <a>Project 3</a>
+                <a>Project 4</a>
+            </div>
+        </div>
+        <div class="documentation">
+            <div class="title">
+                <h1>InstruMental</h1>
+                <p><a href="https://github.com/ethanchaplin/ui-project-1">source</a> | <a href="./implementation/">live demo</a></p>
+            </div>
+            <h2>Description</h2>
+            <p>InstruMental was the first project of my User Interfaces course. We were tasked with creating
+               a type of journaling app, to track goals, progress, journies, etc.
+            </p>
+            <h2>Early Designs</h2>
+            <h3>Interviews</h3>
+            <h3>Sketches</h3>
+            <h3>Feedback</h3>
+            <h2>Element Descriptions</h2>
+            <h3>Calendar Scroller</h3>
+            <p>
+                The calendar scroller lets the user scroll to the desired entry. Dates which are red indicate days without an entry,
+                dates which are black indicate a day with a journal entry, dates which are grey are future dates and shouldn't be accessible,
+                and the date which is blue indicates the day you have currently selected. The page automatically selects today as the default date.
+            </p>
+            <h3>Entry Types</h3>
+            <p>
+                The entry types are the core features of the journal. They allow users to track different metrics regarding their progress, and is likely
+                the first thing the user notices when they first enter the app.
+            </p>
+            <h4>Audio Logs</h4>
+            <p>
+                The audio logs entry allows users to upload their progress for the day by recording them playing the instrument. They can upload
+                as many audio files as they like for the day.
+            </p>
+            <h4>Goals</h4>
+            <p>
+                The goals entry allows users to check off goals for the day, and add more goals.
+            </p>
+            <h4>Practice Time</h4>
+            <p>
+                Allows the user to enter in the amount of minutes they practiced for the day. Will update the global average as seen in the sidebar.
+            </p>
+            <h4>Journal</h4>
+            <p>
+                Allows users to record thoughts, ideas, notes, etc. for the day.
+            </p>
+            <h3>Settings</h3>
+            <p>
+                Allows the users to edit the UI colors of the app to their own liking. Also allows users to enter in their average daily practice goal.
+            </p>
+            <h3>Layout Editor</h3>
+            <p>
+                The layout editor enables the user to fully arrange their entries to their liking. They can add, remove, duplicate, and rearrange their entries
+                to their hearts content. For each level of entry size&mdash;small, medium, and large&mdash; they can choose which entry goes in what spot. A large entry can be split
+                into three columns of medium entries, and a medium entry can be split into three rows of small entries. Entries can be left blank, allowing for spacing.
+            </p>
+            <h2>Implementation Details</h2>
+            <p>
+                This project was built with Svelte. No external CSS or component libraries were used, all was built from scratch. Each element was a component, except for
+                the sidebar which I kept within <code>App.svelte</code>.
+            </p>
+            <p>
+                Every menu was the same modal, with injected content. This simplified things a lot, so I didn't have to make a new component for each menu I wanted to display.
+            </p>
+            <p>
+                I used dynamic components to implement the layout system, allowing for the parent components to "point"
+                to which component it would like to show. This means that the high level page only has two <code>LargeEntry</code>s, which then can point to either a large entry,
+                or a <code>MediumSplitter</code> which contains three <code>MediumEntry</code>. The <code>MediumEntry</code>s can point to a medium entry or a <code>SmallSplitter</code>, which
+                contains three <code>SmallEntry</code>s.
+            </p>
+            <h2>Future Work</h2>
+            <p>There's some things I would have changed/fixed right off the bat, but due to time constraints
+               I was unable to address them without sacrificing other integral parts of the project.
+            </p>
+            <ul>
+                <li>
+                    The layout system could use a little work. When in layout edit mode, the close buttons which delete
+                    a certain view from the layout are close together in some instances. This can cause users to remove the wrong component,
+                    which while not permenant, can be obstrusive. This only affects the users when they're trying to change the look of the page,
+                    which is a very small use-case and will not be encountered by the vast majority of users.
+                </li>
+                <li>
+                    The site is not responsive, and even smaller laptop screens might see some elements squished together
+                    more than I would have liked. I tested several different monitors/screen sizes and most seem to respect my margins,
+                    but there's a chance that some users might notice undesired spacing based on their screen size. Don't even try to view this on mobile.
+                </li>
+            </ul>
+            <p>Then, there's the actual functionality which I would've liked to implement, based off of feedback and my own desires for the project.</p>
+            <ul>
+                <li>
+                    Some user feedback that I got was that one may want to select the month rather than scrolling through a bunch of dates. This will only affect users which
+                    have been logging entries for several months.
+                </li>
+                <li>
+                    I would've liked to implement a graphing feature, where users could track their habits over time, like a daily bar graph of their practice minutes,
+                    or a line graph showing their average practice time as their journaling progressed. I would also have liked to show them which goals they had missed the most,
+                    to emphasize those goals for future practicing.
+                </li>
+                <li>
+                    More entry types, like a mental tracker about how they're feeling about their progress, or other things I haven't thought of.
+                </li>
+                <li>
+                    Flesh out the audio experience, and implement a way to compare the same song over time, to track your sonic progress. I would also like users to be able to record
+                    in-app, without needing to externally record, store, and then upload their audio.
+                </li>
+            </ul>
+            <h2>Demo</h2>
+        </div>
+    </body>
 </html>
