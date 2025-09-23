@@ -10,7 +10,8 @@
     <body>
         <div class="nav">
             <div class="links">
-                <a href="/">Project 1</a>
+                <a href="/">Home</a>
+                <a href="/instrumental/">Project 1</a>
                 <a>Project 2</a>
                 <a>Project 3</a>
                 <a>Project 4</a>
@@ -23,58 +24,143 @@
             </div>
             <h2>Description</h2>
             <p>InstruMental was the first project of my User Interfaces course. We were tasked with creating
-               a type of journaling app, to track goals, progress, journies, etc.
+               a type of journaling app, to track goals, progress, journeys, etc. I decided to focus on tracking progress
+               of learning an instrument, because I recently have decided to learn the guitar. It is a comprehensive journaling app
+               which allows you to listen to your own playing in the past, as well as set goals to track and see your progress over time.
             </p>
-            <h2>Early Designs</h2>
+            <h2>Design</h2>
             <h3>Interviews</h3>
+            <ul>
+                <li>What do you hope to learn from these interviews?</li>
+                <p>
+                    I hope to learn unique perspectives on this app, 
+                    I can tend to box myself into a single idea, but 
+                    other perspectives can break that open and help 
+                    improve my designs. I’m hoping I am inspired to 
+                    implement a feature I wouldn’t have thought of myself.
+                </p>
+                <li>What questions did you ask?</li>
+                <ul>
+                    <li>Have you used technology to track progress on learning an instrument before?</li>
+                    <ul>
+                        <li> If yes, what was limiting about it?</li>
+                        <li> If no, how would you have liked to utilize technology to track your progress?</li>
+                    </ul>
+                    <li>If you could listen to your own progress, would that encourage you to continue?</li>
+                    <li>To you, what is the single most important thing about learning an instrument?</li>
+                    <li>What would you like to see in an app that tracks your progress learning an instrument?</li>
+                </ul>
+                <li>What did your interview participants tell you?  What did you learn from them?</li>
+                <p>
+                    A common theme I got in response was the emphasis on the ability to listen to their old recordings, especially
+                    if it was the same musical piece. Not only would this demonstrate progress as a confidence booster, it also accents
+                    what parts of their playing needs work. If a certain passage sounds incorrect, that points to a place to improve.
+                </p>
+                <p>
+                    One respondant mentioned a "streak" mechanic, a la Duolingo, as an incentive to keep practicing. Certain visual flairs, perks, 
+                    or "prizes" could act as good motivation to continue.
+                </p>
+                <p>
+                    I learned that a good emphasis is an ease of comparison. Whatever interface I design should make it easy to see previous entries.
+                </p>
+            </ul>
+            <h3>Design Requirements</h3>
+            <p>I identified the following as design goals for the interface</p>
+            <ul>
+                <li>Be able to upload audio files to listen to later</li>
+                <li>Be able to add or remove goals to be checked off daily</li>
+                <li>Set goals for a daily average of practice minutes</li>
+                <li>Flexible layout for a customizable view</li>
+                <li>The ability to track the same song over the course of several days/weeks</li>
+            </ul>
+            <h3>Challenges</h3>
+            <ul>
+                <li>Implementing an in-app audio player</li>
+                <li>Deciding how to implement a flexible layout</li>
+                <li>Creating an infinite calendar scroller</li>
+            </ul>
             <h3>Sketches</h3>
+            <h3>Final Prototype</h3>
+            <img src="assets/demo_sketch.png">
             <h3>Feedback</h3>
+            <ul>
+                <li>
+                    One piece of feedback mentioned that I should implement a way for users to select the
+                    month in the calendar selector.
+                </li>
+                <li>
+                    Another bit of feedback was to only let users change the layout in a dedicated edit mode,
+                    which I ended up implementing in the final design.
+                </li>
+            </ul>
             <h2>Element Descriptions</h2>
             <h3>Calendar Scroller</h3>
-            <p>
-                The calendar scroller lets the user scroll to the desired entry. Dates which are red indicate days without an entry,
-                dates which are black indicate a day with a journal entry, dates which are grey are future dates and shouldn't be accessible,
-                and the date which is blue indicates the day you have currently selected. The page automatically selects today as the default date.
-            </p>
+            <div class="with-image">
+                <p>
+                    The calendar scroller lets the user scroll to the desired entry. Dates which are red indicate days without an entry,
+                    dates which are black indicate a day with a journal entry, dates which are grey are future dates and shouldn't be accessible,
+                    and the date which is blue indicates the day you have currently selected. The page automatically selects today as the default date.
+                </p>
+                <img src="assets/calendar.png">
+            </div>
             <h3>Entry Types</h3>
             <p>
                 The entry types are the core features of the journal. They allow users to track different metrics regarding their progress, and is likely
                 the first thing the user notices when they first enter the app.
             </p>
             <h4>Audio Logs</h4>
-            <p>
-                The audio logs entry allows users to upload their progress for the day by recording them playing the instrument. They can upload
-                as many audio files as they like for the day.
-            </p>
+            <div class="with-image">
+                <p>
+                    The audio logs entry allows users to upload their progress for the day by recording them playing the instrument. They can upload
+                    as many audio files as they like for the day.
+                </p>
+                <img src="assets/practice_logs.png">
+            </div>
             <h4>Goals</h4>
-            <p>
-                The goals entry allows users to check off goals for the day, and add more goals.
-            </p>
+            <div class="with-image">
+                <p>
+                    The goals entry allows users to check off goals for the day, and add more goals.
+                </p>
+                <img src="assets/add_goal.png">
+            </div>
             <h4>Practice Time</h4>
             <p>
                 Allows the user to enter in the amount of minutes they practiced for the day. Will update the global average as seen in the sidebar.
             </p>
             <h4>Journal</h4>
-            <p>
-                Allows users to record thoughts, ideas, notes, etc. for the day.
-            </p>
+            <div class="with-image">
+                <p>
+                    Allows users to record thoughts, ideas, notes, etc. for the day.
+                </p>
+                <img src="assets/journal.png">
+            </div>
             <h3>Settings</h3>
-            <p>
-                Allows the users to edit the UI colors of the app to their own liking. Also allows users to enter in their average daily practice goal.
-            </p>
+            <div class="with-image">
+                <p>
+                    Allows the users to edit the UI colors of the app to their own liking. Also allows users to enter in their average daily practice goal.
+                </p>
+                <img src="assets/settings.png">
+            </div>
             <h3>Layout Editor</h3>
-            <p>
-                The layout editor enables the user to fully arrange their entries to their liking. They can add, remove, duplicate, and rearrange their entries
-                to their hearts content. For each level of entry size&mdash;small, medium, and large&mdash; they can choose which entry goes in what spot. A large entry can be split
-                into three columns of medium entries, and a medium entry can be split into three rows of small entries. Entries can be left blank, allowing for spacing.
-            </p>
+            <div class="with-image">
+                <p>
+                    The layout editor enables the user to fully arrange their entries to their liking. They can add, remove, duplicate, and rearrange their entries
+                    to their hearts content. For each level of entry size&mdash;small, medium, and large&mdash; they can choose which entry goes in what spot. A large entry can be split
+                    into three columns of medium entries, and a medium entry can be split into three rows of small entries. Entries can be left blank, allowing for spacing.
+                </p>
+                <img src="assets/edit_mode.png">
+            </div>
             <h2>Implementation Details</h2>
             <p>
                 This project was built with Svelte. No external CSS or component libraries were used, all was built from scratch. Each element was a component, except for
-                the sidebar which I kept within <code>App.svelte</code>.
+                the sidebar and the navbar, which I kept within <code>App.svelte</code>.
             </p>
             <p>
                 Every menu was the same modal, with injected content. This simplified things a lot, so I didn't have to make a new component for each menu I wanted to display.
+            </p>
+            <p>
+                The audio player waveform was created by taking the byte stream of the audio file that the user uploads, converting it into audio samples, then separating those
+                samples into 30 equal bins. The average value of the sample is then calculated, and the average is displayed as the height of the corresponding bar in the visualizer.
             </p>
             <p>
                 I used dynamic components to implement the layout system, allowing for the parent components to "point"
@@ -99,7 +185,7 @@
                     but there's a chance that some users might notice undesired spacing based on their screen size. Don't even try to view this on mobile.
                 </li>
             </ul>
-            <p>Then, there's the actual functionality which I would've liked to implement, based off of feedback and my own desires for the project.</p>
+            <p>There's also functionality which I would've liked to implement, based off of feedback and my own desires for the project.</p>
             <ul>
                 <li>
                     Some user feedback that I got was that one may want to select the month rather than scrolling through a bunch of dates. This will only affect users which
