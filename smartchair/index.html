@@ -1,15 +1,103 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Svelte</title>
-    <script type="module" crossorigin src="assets/index-CmwmzOah.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-Bl_1AkbS.css">
-  </head>
-  <body>
-    <div id="app"></div>
-
-  </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SmartChair Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/instrumental/">Project 1</a>
+                <a href="/smartchair/">Project 2</a>
+                <a>Project 3</a>
+                <a>Project 4</a>
+            </div>
+        </div>
+        <div class="documentation">
+            <div class="title">
+                <h1>SmartChair</h1>
+                <p><a href="https://github.com/TheBrambam/project2/">source</a> | <a href="implementation/">live demo</a></p>
+            </div>
+            <h2>Description</h2>
+            <p>
+                SmartChair is an innovative seating solution designed to promote better posture and comfort. It is to be of standard height from a 
+                measurement from the ground to the top of the seat-bottom position, parallel with the ground and perpendicular to the seat-back. 
+                This will be the neutral/initial position of the chair. The seat back will be adjustable by angles given to the user along with the 
+                leg rest that will be able to be adjusted as well. Both seat-back and leg rest will be adjustable at the same time. There will be 
+                sensors in the seat bottom that detect the pressure of the user from thirty-six locations to make suggestions on how to adjust the user’s posture. 
+                The sensors will be able to take into consideration whether or not the user has a wallet in their back pocket and make helpful suggestions to 
+                adjust the seat to assist with back pain. All suggestions will be implemented with user approval; they will not make any adjustments without consent.
+            </p>
+            <p>
+                The user interface is portable, about the size of an iPad Air. 
+                It will be mounted to an arm that holds it to either the left or right of the arm on the chair. 
+                If the user so chooses, they can also use their mobile device to make adjustments on the chair.
+            </p>
+            <h2>Design</h2>
+            <h3>Interviews</h3>
+            <ul>
+                <li>
+                    One person interviewed with chronic back pain, uses a cane, two total knee replacements, elderly, and they are looking for an ease-of-use chair that won’t take a lot of effort to learn. Comfort was a large request, but not too much comfort so that they won’t want to get out of the chair. They mentioned that they saw a chair at a furniture store that will assist with getting out of the chair and that it would be a feature they would like to be incorporated. 
+                </li>
+                <li>
+                    Another person interviewed with chronic back pain, uses a walker, one total knee replacement, elderly said they wanted something that would help them try to stop slouching in their chair. They wanted a recliner, but the recliner should help them sit up straight rather than be in a reclined position all the time. Interest was expressed when asking about alerts sent to their phone, rather than having everything on a screen attached to the chair. 
+                </li>
+                <li>
+                    Another person interviewed with sciatica and upper back pain and is middle-aged said they wanted something that would remind them to correct their posture and stand up occasionally, so they aren’t sitting the entire time. Rather than having a recliner, perhaps make it a computer/office desk chair so they can use it during work and not just when they get home. 
+                </li>
+                <li>
+                    Another person interviewed with no medical issues and in their single-digit youth said they want a chair that will help them go to sleep in the living room if a movie their parents are watching is boring. They don’t want to go to bed yet. 
+                </li>
+            </ul>
+            <p>
+                From the interviews, we gathered that the needs of the chair and its interface are that it is easy to use, has posture correction, and a timer to keep track of how long the chair has been used. These factors were taken into consideration when creating the final design. 
+            </p>
+            <h3>Sketches</h3>
+            <div class="sketches">
+            </div>
+            <div class="sketches">
+            </div>
+            <h3>Feedback</h3>
+            <ul>
+            </ul>
+            <h2>Element Descriptions</h2>
+            <h2>Implementation Details</h2>
+            <h2>Future Work</h2>
+            <li>
+                Future work will include lumbar support and adjustment in the same manner as the seat bottom is done. 
+            </li>
+ 
+            <li>
+                In the future, we can also add a feature to remind the user to stand if they have been sitting for a long period of time. 
+            </li>
+ 
+            <li>
+                Have a game on the pad to show interaction with the product (tightrope game or a sledding game that goes straight, and your posture is leaning the sled toward the edge of the course … or something like that) 
+            </li>
+            <li>
+                Include a doctor’s interface that can let them know that posture is improving. The doctor will then be able to interact with the patient much quicker thanks to how Epic medical records work. Integration into other apps would be useful if there are multiple physicians using different programs to see progress. This can also speed up the appointment because the doctor can have what they want to talk about prior to the patient’s arrival and can begin talking about a plan to assist in recovery or therapy. 
+            </li>
+            <li> 
+                Implementation of AI to help with predictions on posture correction and suggestions based on user history and preferences.
+            </li>
+            <li>
+                Individually adjustable (auto-levelling) legs for uneven floors. 
+            </li>
+            <li>
+                Different versions of the chair so it can be in multiple places at once. 
+            </li>
+            <li>
+                Implementation of a scoring system to rank how posture is improving and motivating the user to keep using the product. 
+            </li>
+            <li>
+                If there are multiple family members that are using the product, have them get an option to share their scores so they can compete against each other, thus encouraging more use. 
+            </li>
+            <h2>Demo</h2>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/wbQtER-Vaqk?si=f2spdF2d8dKRteRX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </div>
+    </body>
 </html>
