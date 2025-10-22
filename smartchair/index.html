@@ -58,15 +58,34 @@
             </p>
             <h3>Sketches</h3>
             <div class="sketches">
+                <img src="./assets/sketch1.png" alt="Sketch 1">
+                <img src="./assets/sketch2.png" alt="Sketch 2">
             </div>
             <div class="sketches">
+                <img src="./assets/sketch3.png" alt="Sketch 3">
+                <img src="./assets/sketch4.png" alt="Sketch 4">
             </div>
-            <h3>Feedback</h3>
             <ul>
             </ul>
             <h2>Element Descriptions</h2>
+            <h3>Chair Visual</h3>
+            <p>
+                The chair shows a 2D representation of the SmartChair with adjustable parts moving in realtime to show the position of the chair.
+            </p>
+            <h3>Adjustment Sliders</h3>
+            <p>
+                The adjustment sliders allow users to customize the chair's settings, such as recline and leg support, to achieve their desired comfort level.
+            </p>
+            <h3>Posture Feedback</h3>
             <h2>Implementation Details</h2>
+            <p>
+                The SmartChair interface is built using Svelte, a modern JavaScript framework that allows for efficient and reactive user interfaces. The chair visual is created using SVG graphics, enabling smooth animations and real-time updates as users adjust the chair settings. The adjustment sliders are implemented using Svelte's built-in components, providing a seamless user experience. Posture feedback is generated based on sensor data, which is processed and displayed to the user in an intuitive manner.
+                The sensor visual was designed with D3, and the 3D height map was built with Babylon.js.
+            </p>
             <h2>Future Work</h2>
+            <li>
+                Implementing an interface where they can see the sensor data and adjust their posture based on that data. Currently the chair adjusts for them without showing the visual.
+            </li>
             <li>
                 Future work will include lumbar support and adjustment in the same manner as the seat bottom is done. 
             </li>
