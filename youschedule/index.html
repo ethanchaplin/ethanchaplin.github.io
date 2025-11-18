@@ -1,50 +1,128 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		
-		<link rel="modulepreload" href="./_app/immutable/entry/start.CP2YxGlP.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DNHQ2edl.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/VjCNVJpb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/gt70LXMx.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.DzLOCkL4.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/rgQEc1Ks.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CwHLHbtU.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DSNOYk_x.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CKtf1hCL.js">
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-				overflow-x: hidden;
-				font-family: "Inter", sans-serif;
-				font-optical-sizing: auto;
-				font-style: normal;
-			}
-		</style>
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">
-			<script>
-				{
-					__sveltekit_1s0c5ec = {
-						base: new URL('.', location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("./_app/immutable/entry/start.CP2YxGlP.js"),
-						import("./_app/immutable/entry/app.DzLOCkL4.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouSchedule Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/instrumental/">Project 1</a>
+                <a href="/smartchair/">Project 2</a>
+                <a href="/youschedule">Project 3</a>
+                <a>Project 4</a>
+            </div>
+        </div>
+        <div class="documentation">
+            <div class="title">
+                <h1>YouSchedule</h1>
+                <p><a href="https://github.com/ethanchaplin/Project-3">source</a> | <a href="implementation/">live demo</a></p>
+            </div>
+            <h2>Description</h2>
+            <p>
+                YouSchedule is a fundamental redesign of a popularly used software application within the University of Cincinnati 
+                for scheduling classes and planning credits towards graduation. With courses being removed or not available, we want 
+                to enhance the self-sufficiency of students to schedule their classes for a semester. We also feel that if we are 
+                eligible for certificate or minor (or at least close to being eligible for one), the enhancement will recommend 
+                courses based on potential benefits for the student. 
+            </p>
+            <h2>Design</h2>
+            <h3>Interviews</h3>
+            <h4>Questions</h4>
+            <ul>
+                <li>
+                    How confident do you feel about scheduling your classes for the next semester? 
+                </li>
+                <li>
+                    Do you have any problems with scheduling your classes? 
+                <li>
+                    What frustrates you must about the course scheduling process?
+                </li>
+                <li>
+                    Would it interest you to have more features when making a decision about taking a specific course? 
+                </li>
+                <li>
+                    Do you feel more confident in your college career with what is currently available to you? 
+                </li>
+            </ul>
+            <h4>Findings</h4>
+            <ul>
+                <li>
+                    Initial findings with one interviewee revealed that they didn’t like the current way courses were scheduled in Catalyst. They were also shocked that they were eligible for a minor because they had a specific courseload that they already took and didn’t know it would apply to them. Frustration grew when they saw how much research they had to do and that nothing was immediately available from their academic advisor. 
+                </li>
+                <li>
+                    Several of the interviewees explained that they needed to jump back and forth between different applications that would have courseloads that were recommended. Because the applications were different, there were several time-out errors received or SSO would kick them out of one of the applications. 
+                </li>
+                <li>
+                    One of the interviewees requested the ability to have additional courses that would contribute to a minor or a potential double major. Having courses available to see in one application would help cut down on relying on the academic advisor. 
+                </li>
+                <li>
+                    An interviewee that does not attend the school asked if there was a way to incorporate AI into the application (merely as a suggestion). Having a chatbot to ask quick questions would be helpful because they had questions when they were in college and couldn’t get them answered before the course would fill up. It was explained to them that it would be a great idea to incorporate it into future deployments. 
+                </li>
+            </ul>
+            <h3>Sketches</h3>
+            <div class="sketches">
+            </div>
+            <div class="sketches">
+            </div>
+            <div class="sketches">
+            </div>
+            <div class="sketches">
+            </div>
+            <h2>Element Descriptions</h2>
+            <h3>
+                Course Dropdowns
+            </h3>
+            <p>
+                Provides the user with reccomended courses based on the year they're in. If the course
+                is already accounted for in the semester views, they will no longer appear on the side, making
+                it a sort of a checkoff list.
+            </p>
+            <h3>
+                Drag and Drop
+            </h3>
+            <p>
+                Users can quickly and easily drag and drop the classes they want to take to which semester they want to take them in.
+            </p>
+            <h3>
+                Semester View
+            </h3>
+            <p>
+                Shows the user which courses they have planned for each semester, and when they click on it it opens the scheduler,
+                which allows the user to directly schedule the courses for each semester.
+            </p>
+            <h3>
+                Scheduler
+            </h3>
+            <p>
+                Interface in which users can see each block of time every section takes up, and allows them to select which section they want to take. Once they
+                solidify a choice, it removes the other sections of the same class from the same time frame, as well as any other courses which would take up the same time.
+            </p>
+            <h2>Future Work</h2>
+            <li>
+                Advanced course reccomendations based on major, other interests, other info etc.
+            </li>
+            <li>
+                A quick way to transfer these classes to the scheduling tool, or an integrated schedular itself, allowing for a single button scheduling process.
+            </li>
+            <li>
+                A popover for degree progress, showing detailed statistics on what is needed to graduate when clicking the top progress radial.
+            </li>
+            <li>
+                Smart color coding and search-based filtering based upon subsection/tag of each course. Ie Chemistry, Science, Math, Computer Science, Degree Required, Elective, etc. 
+            </li>
+            <li>
+                Detailed statistical data, and better class information popover, shown by a circular i button, to provide detailed data for those who may need it. 
+            </li>
+            <li>
+                Class and teacher reviews system, allowing students to rate a class difficulty (especially useful for elective classes) which would show as a percentage or colored dot in the corner of the classes’ info box. 
+            </li>
+            <h2>Demo</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zNL3cvZqiHo?si=TjQieWv5xeA1QLx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </body>
 </html>
