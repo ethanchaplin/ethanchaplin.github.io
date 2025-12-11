@@ -23,48 +23,61 @@
                 <p><a href="https://github.com/ethanchaplin/youfood-proj4/">source</a> | <a href="implementation/">live demo</a></p>
             </div>
             <h2>Description</h2>
+            <h3>Problem Statement</h3>
             <p>
+                Many individuals and families face food insecurity, struggling to access sufficient and nutritious food. Food pantries and soup kitchens provide essential resources, but
+                accessing these services can be challenging due to transportation issues, limited operating hours, and possible individual mobility limitations. There is a need for a convenient and respectful way
+                for those in need to obtain food from these resources.
+            </p>
+            <h3>Solution</h3>
+            <p>
+                YouFood is a free food pantry/soup kitchen delivery service for those in need who don't have reliable ways to get to food sources.
+                Users can schedule food deliveries through an easy-to-use interface, selecting from available food options from open and closed pantries. If
+                a user orders from a closed pantry, volunteers will pick up the food and deliver it to the user at the next time the pantry is open.
             </p>
             <h2>Design</h2>
             <h3>Design Requirements</h3>
             <p>I identified the following as design goals for the interface</p>
             <ul>
-                <li>Be able to upload audio files to listen to later</li>
-                <li>Be able to add or remove goals to be checked off daily</li>
-                <li>Set goals for a daily average of practice minutes</li>
-                <li>Flexible layout for a customizable view</li>
-                <li>The ability to track the same song over the course of several days/weeks</li>
+                <li>It is simple to use</li>
+                <li>The user should always be able to schedule an order</li>
+                <li>Order process should take no more than three steps</li>
             </ul>
-            <h3>Challenges</h3>
-            <ul>
-
-            </ul>
-            <h3>Sketches</h3>
-            <div class="sketches">
-                <img src="assets/sketch_1.jpg">
-                <img src="assets/sketch_2.jpg">
-            </div>
-            <div class="sketches">
-                <img src="assets/sketch_audio.jpg">
-                <img src="assets/sketch_calendar.jpg">
-            </div>
-            <h3>Final Prototype</h3>
-            <img src="assets/demo_sketch.png">
+            <h3>Final Sketches</h3>
+            <img src="assets/finalsketch1.png">
+            <img src="assets/finalsketch2.png">
+            <img src="assets/finalsketch3.png">
             <h2>Element Descriptions</h2>
+            <h3>Open Pantries</h3>
+            <p>
+                The open pantries section allows users to select from food pantries that are currently open. Users can select items from the pantry's available food list,
+                and add them to their order.
+            </p>
+            <h3>Closed Pantries</h3>
+            <p>
+                The closed pantries section allows users to select from food pantries that are currently closed. Users can select items from the pantry's available food list,
+                and add them to their order. Orders from closed pantries will be fulfilled when the pantry next opens.
+            </p>
+            <h3>Item Selection</h3>
+            <p>
+                Each pantry has a list of available food items. Users can click on an item to add it to their order. Users can add a number of items up to the max available quantity.
+            </p>
+            <h3>Delivery Information</h3>
+            <p>
+                Once the user has selected their items, they can proceed to the delivery information section. Here, they can enter their address and contact info. They are also able to review the items they selected.
+            </p>
             <h2>Implementation Details</h2>
             <p>
-                This project was built with Svelte. No external CSS or component libraries were used, all was built from scratch. Each element was a component, except for
-                the sidebar and the navbar, which I kept within <code>App.svelte</code>.
+                This project was built with Svelte. No external CSS or component libraries were used, all was built from scratch.
             </p>
             <h2>Future Work</h2>
-            <p>There's some things I would have changed/fixed right off the bat, but due to time constraints
-               I was unable to address them without sacrificing other integral parts of the project.
-            </p>
             <ul>
+                <li>Ability to change address, only had hardwired addresses for the demo</li>
+                <li>Implement delivery driver UI</li>
+                <li>Add images to food items</li>
+                <li>Layout for mobile devices</li>
             </ul>
-            <p>There's also functionality which I would've liked to implement, based off of feedback and my own desires for the project.</p>
-            <ul>
-            </ul>
+            <h2>Demo</h2>
         </div>
     </body>
 </html>
